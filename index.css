@@ -73,7 +73,7 @@ body {
 /* banner */
 #banner {
     min-height: 670px;
-    background-image: url('/assets/hero-bg.png');
+    background-image: url('../assets/hero-bg.png');
     background-position: center;
     background-size: cover;
 }
