@@ -97,6 +97,7 @@ body {
 .banner-title {
     font-size: 72px;
     font-weight: 700;
+    text-transform: capitalize;
     color: #FFFFFF;
     line-height: 84px;
     text-align: center;
@@ -164,12 +165,14 @@ body {
 .notes-problems-heading {
     font-size: 48px;
     font-weight: 700;
+    text-transform: capitalize;
     color: #001931;
     margin-bottom: 16px;
 }
 
 .notes-problems-subtitle, 
-.card p {
+.card p, 
+.structure-text p {
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
@@ -211,3 +214,53 @@ body {
     margin-bottom: 21px;
 }
 
+/* structured by design section */
+#structured-by-design {
+    padding: 120px 120px;
+    background-color: #FFFFFF;
+    /* align-items: center; */
+}
+
+.structure-content-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap: 60px;
+}
+
+.structure-content-container img {
+    border-radius: 12px;
+}
+
+.structure-text {
+    text-align: left;
+}
+
+.structure-text h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #469165;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.structure-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #001931;
+    text-transform: capitalize;
+}
+
+.structure-text p {
+    max-width: 500px;
+    margin: 16px auto 32px;
+}
+
+.items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+}
