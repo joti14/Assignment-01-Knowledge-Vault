@@ -172,7 +172,9 @@ body {
 
 .notes-problems-subtitle, 
 .card p, 
-.structure-text p {
+.structure-text p, 
+.cta-text, 
+.bottom-text {
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
@@ -263,4 +265,36 @@ body {
     align-items: center;
     gap: 6px;
     margin-bottom: 16px;
+}
+
+#cta-section {
+    padding: 120px;
+    background-color: #FFFFFF;
+}
+
+.cta-content {
+    padding: 80px 40px;
+    border-radius: 12px;
+    background-color: #F7F6F2;
+    text-align: center;
+}
+
+.cta-header {
+    font-size: 40px;
+    font-weight: 700;
+    color: #001931;
+    margin-bottom: 16px;
+}
+
+.cta-text {
+    max-width: 600px;
+    margin: 16px auto 32px;
+}
+
+.cta-bottom-texts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
 }
