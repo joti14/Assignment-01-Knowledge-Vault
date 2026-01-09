@@ -23,8 +23,26 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
+.btn:hover {
+    background-color: #195030;
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+
+.notes-problems-subtitle, 
+.card p, 
+.structure-text p, 
+.cta-text, 
+.bottom-text, 
+.copyright p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #627382;
+}
 
 /* main styles */
 
@@ -45,6 +63,11 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: #000000;
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* banner */
@@ -72,21 +95,8 @@ body {
 }
 
 .status-dot {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #9FC6AE;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.status-dot::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #469165;
 }
 
 .status-text {
@@ -96,6 +106,8 @@ body {
 }
 
 .banner-title {
+    max-width: 770px;
+    margin: 0 auto;
     font-size: 72px;
     font-weight: 700;
     text-transform: capitalize;
@@ -138,6 +150,13 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+.build-vault-btn:hover {
+    background-color: #195030;
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
 }
 
 .how-it-works-btn {
@@ -151,6 +170,13 @@ body {
     font-weight: 600;
     color: #FFFFFF;
     background: transparent;
+    cursor: pointer;
+}
+
+.how-it-works-btn:hover {
+    background-color: #0b0b0b3c;
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
 }
 
 /* note's problem section */
@@ -171,24 +197,13 @@ body {
     margin-bottom: 16px;
 }
 
-.notes-problems-subtitle, 
-.card p, 
-.structure-text p, 
-.cta-text, 
-.bottom-text, 
-.copyright p {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #627382;
-}
-
 .notes-problems-card-container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     gap: 24px;
     margin: 44px 120px;
+    flex-wrap: nowrap;
 }
 
 .card {
@@ -222,13 +237,11 @@ body {
 #structured-by-design {
     padding: 120px 120px;
     background-color: #FFFFFF;
-    /* align-items: center; */
 }
 
 .structure-content-container {
     display: flex;
     align-items: center;
-    /* justify-content: space-evenly; */
     gap: 60px;
 }
 
@@ -269,6 +282,7 @@ body {
     margin-bottom: 16px;
 }
 
+/* ready to think */
 #cta-section {
     padding: 120px;
     background-color: #FFFFFF;
@@ -293,6 +307,13 @@ body {
     margin: 16px auto 32px;
 }
 
+.early-access-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
 .cta-bottom-texts {
     display: flex;
     align-items: center;
@@ -312,11 +333,6 @@ body {
     justify-content: space-between;
     gap: 790px;
     margin-bottom: 80px;
-}
-
-.logo {
-    width: 350px;
-    height: 60px;
 }
 
 .socials p {
